@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saikumar Reddy Naidu - Data Engineer & IoT Healthcare Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --dark-bg: #ffffff;
+            --card-bg: #f8fafc;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --accent: #0ea5e9;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text h2 {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem;
+        }
+
+        .profile-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin-top: 1.5rem;
+        }
+
+        .contact-info a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.5rem 0;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .stat-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card .number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .stat-card .label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 8px 16px rgba(99, 102, 241, 0.15);
+        }
+
+        .skill-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: rgba(99, 102, 241, 0.1);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 8px 16px rgba(99, 102, 241, 0.15);
+        }
+
+        .project-icon {
+            font-size: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-content h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-meta {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .project-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .project-link:hover {
+            color: var(--accent);
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--primary-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 3rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3.5rem;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            border: 3px solid var(--dark-bg);
+        }
+
+        .timeline-date {
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline-content h3 {
+            margin-bottom: 0.3rem;
+        }
+
+        .timeline-content h4 {
+            color: var(--text-secondary);
+            font-weight: normal;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .timeline-content li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.8rem;
+        }
+
+        .timeline-content li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        /* Certifications Grid */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .certification-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .certification-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 8px 16px rgba(99, 102, 241, 0.2);
+        }
+
+        .certification-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .certification-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .certification-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .view-certificate {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1.5rem;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 6px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .certification-card:hover .view-certificate {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--card-bg);
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .timeline {
+                padding-left: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">SN</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Hello, I am</h2>
+                    <h1>Saikumar Reddy Naidu</h1>
+                    <p>Data Engineer | IoT Healthcare Specialist</p>
+                    <p>I'm a data engineer working in healthcare, focused on making complex clinical and device data reliable, accessible, and useful for better decisions.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-avatar">SN</div>
+                    <h3>Saikumar Naidu</h3>
+                    <p>Data Engineer @ Upsilonsoft LLC</p>
+                    <div class="contact-info">
+                        <a href="mailto:snaidu2022@fau.edu">📧 snaidu2022@fau.edu</a>
+                        <a href="tel:+19123067209">📱 +1 912-306-7209</a>
+                        <a href="#">📍 Winder, Georgia, US</a>
+                        <a href="https://www.linkedin.com/in/reddysaiu" target="_blank">💼 LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="icon">🔌</div>
+                    <div class="number">2</div>
+                    <div class="label">IoT Research Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="icon">📊</div>
+                    <div class="number">40%</div>
+                    <div class="label">Pipeline Optimization</div>
+                </div>
+                <div class="stat-card">
+                    <div class="icon">☁️</div>
+                    <div class="number">AWS</div>
+                    <div class="label">Certified Engineer</div>
+                </div>
+                <div class="stat-card">
+                    <div class="icon">🎓</div>
+                    <div class="number">6</div>
+                    <div class="label">Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: var(--text-secondary);">
+                Data Engineer and researcher passionate about IoT-driven healthcare solutions, building end-to-end data workflows for real-time decision making.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>📊 Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PySpark</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Scala</span>
+                        <span class="skill-tag">ETL</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>☁️ Cloud & Big Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">EMR</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">Azure Blob</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>🔌 IoT & Healthcare</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">Medical IoT</span>
+                        <span class="skill-tag">Sensors</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>📈 Analytics & Viz</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Informatica</span>
+                        <span class="skill-tag">Collibra</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--text-secondary);">
+                Featured work in IoT healthcare, supply chain analytics, and data engineering
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🌱</div>
+                    <div class="project-content">
+                        <h3>IoT-Based Smart Irrigation System</h3>
+                        <p class="project-meta">IoT Research • Published 2020</p>
+                        <p>Designed an IoT irrigation system using sensors, solenoid valves, and wireless communication to optimize water flow based on real-time soil moisture.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Arduino</span>
+                            <span class="skill-tag">Sensors</span>
+                            <span class="skill-tag">IoT</span>
+                            <span class="skill-tag">Research</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.ijrte.org/portfolio-item/A1979059120/" class="project-link">📄 Read Publication →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">📦</div>
+                    <div class="project-content">
+                        <h3>Supply Chain Predictive Intelligence</h3>
+                        <p class="project-meta">Supply Chain Analytics • 2026</p>
+                        <p>Real-time platform monitoring global part availability, generating Demand Pressure Index for smart procurement decisions.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Analytics</span>
+                            <span class="skill-tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://lnkd.in/eNMwrD9n" class="project-link">📊 Dashboard →</a>
+                            <a href="https://lnkd.in/ezfRFHH7" class="project-link">💻 GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🏥</div>
+                    <div class="project-content">
+                        <h3>IoT Patient Vitals Streaming Pipeline</h3>
+                        <p class="project-meta">Healthcare IoT • BMS</p>
+                        <p>Building real-time data pipelines that ingest sensor-driven medical device streams for early-risk detection and patient monitoring.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Medical IoT</span>
+                            <span class="skill-tag">Real-time</span>
+                            <span class="skill-tag">Healthcare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">💼</div>
+                    <div class="project-content">
+                        <h3>Enterprise Data Lake Modernization</h3>
+                        <p class="project-meta">Cloud Migration • Progress Solutions</p>
+                        <p>Migrated on-prem datasets to cloud, built automated ETL pipelines, reduced run times by 40% through optimization.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS S3</span>
+                            <span class="skill-tag">PySpark</span>
+                            <span class="skill-tag">ETL</span>
+                            <span class="skill-tag">Azure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">My Experience</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--text-secondary);">
+                Professional journey in data engineering and IoT healthcare
+            </p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2025 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Data Engineer</h3>
+                        <h4>Upsilonsoft LLC (Client: Bristol Myers Squibb)</h4>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">IoT-Enabled Patient Vitals Streaming & Early-Risk Detection</p>
+                        <ul>
+                            <li>Analyze large-scale patient & IoT-healthcare data for clinical workflow improvements</li>
+                            <li>Build data pipelines ingesting sensor-driven medical device streams</li>
+                            <li>Collaborate on connected health system initiatives with device telemetry</li>
+                            <li>Develop automated insights for smarter diagnostics and patient-care decisions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun 2024 – May 2025</div>
+                    <div class="timeline-content">
+                        <h3>Data Engineer Intern</h3>
+                        <h4>Progress Solutions</h4>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">Enterprise Data Lake Modernization & ETL Automation</p>
+                        <ul>
+                            <li>Migrated multiple on-prem datasets into cloud data lake (AWS S3/Azure)</li>
+                            <li>Built automated ETL pipelines using Python, SQL, and PySpark</li>
+                            <li>Reduced pipeline run times by 40% through optimization</li>
+                            <li>Implemented schema evolution and metadata tracking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Apr 2021 – Jul 2022</div>
+                    <div class="timeline-content">
+                        <h3>Project Engineer</h3>
+                        <h4>Wipro</h4>
+                        <p style="color: var(--accent); margin-bottom: 1rem;">Smart Workflow Optimization Using System Telemetry</p>
+                        <ul>
+                            <li>Designed dashboards showing system health and workflow bottlenecks</li>
+                            <li>Developed predictive model for identifying overload conditions</li>
+                            <li>Implemented automation reducing processing time by 30%</li>
+                            <li>Integrated data signals from multiple internal systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem;">Education</h3>
+                <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                    <div class="skill-card">
+                        <h3>🎓 Master of Science in Computer Science</h3>
+                        <p style="color: var(--primary-color); margin: 0.5rem 0;">Florida Atlantic University</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem;">2024</p>
+                        <p style="font-size: 0.9rem;"><strong>Key Coursework:</strong> Internet of Things, Artificial Intelligence, Deep Learning, NLP, AI in Healthcare, Information Theory, Systems & Network Administration</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>🎓 Bachelor of Engineering</h3>
+                        <p style="color: var(--primary-color); margin: 0.5rem 0;">Anna University</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem;">Electronics and Communication • 2020</p>
+                        <p style="font-size: 0.9rem;"><strong>Key Coursework:</strong> Wireless Communication, Antenna & Wave Propagation, Microcontrollers, Embedded Systems, Signal Processing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <a href="Certificates/AWS_Certified_Data_Engineer_Associate_certificate.pdf" target="_blank" class="certification-card">
+                    <div class="certification-icon">☁️</div>
+                    <h3>AWS Certified Data Engineer - Associate</h3>
+                    <p>Amazon Web Services</p>
+                    <span class="view-certificate">View Certificate →</span>
+                </a>
+
+                <a href="Certificates/Project_Management_Professional.pdf" target="_blank" class="certification-card">
+                    <div class="certification-icon">📊</div>
+                    <h3>PMP - Project Management Professional</h3>
+                    <p>Project Management Institute</p>
+                    <span class="view-certificate">View Certificate →</span>
+                </a>
+
+                <a href="Certificates/PowerBI.pdf" target="_blank" class="certification-card">
+                    <div class="certification-icon">📈</div>
+                    <h3>Power BI</h3>
+                    <p>Pragmatic Works</p>
+                    <span class="view-certificate">View Certificate →</span>
+                </a>
+
+                <a href="Certificates/Artificial_Intelligence_Foundations.pdf" target="_blank" class="certification-card">
+                    <div class="certification-icon">🤖</div>
+                    <h3>AI Foundations: Thinking Machines</h3>
+                    <p>LinkedIn Learning</p>
+                    <span class="view-certificate">View Certificate →</span>
+                </a>
+
+                <a href="Certificates/Certificate_Of_Completion_Financial_Modeling_and_Forecasting_Financial_Statements.pdf" target="_blank" class="certification-card">
+                    <div class="certification-icon">💰</div>
+                    <h3>Financial Modeling & Forecasting</h3>
+                    <p>LinkedIn Learning</p>
+                    <span class="view-certificate">View Certificate →</span>
+                </a>
+
+                <a href="Certificates/Career_Essentials_in_Business_analysis.pdf" target="_blank" class="certification-card">
+                    <div class="certification-icon">📊</div>
+                    <h3>Career Essentials in Business Analysis</h3>
+                    <p>Microsoft & LinkedIn Learning</p>
+                    <span class="view-certificate">View Certificate →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--text-secondary);">
+                Feel free to reach out for collaborations, opportunities, or just to connect!
+            </p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:snaidu2022@fau.edu">snaidu2022@fau.edu</a>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">📱</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+19123067209">+1 912-306-7209</a>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/reddysaiu" target="_blank">Connect with me</a>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">📍</div>
+                    <h3>Location</h3>
+                    <p style="color: var(--text-secondary);">Winder, Georgia, US</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Saikumar Reddy Naidu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+           
