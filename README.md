@@ -154,7 +154,7 @@ I'm a Data Engineer working in healthcare, focused on making complex clinical an
 - 📊 PMP - Project Management Professional
 - 📈 Power BI (Pragmatic Works)
 - 🤖 AI Foundations: Thinking Machines (LinkedIn Learning)
-- 💰 Financial Modeling & Forecasting (LinkedIn Learning)
+- 🕸️ Advanced Graph Neural Networks (LinkedIn Learning)
 - 📊 Career Essentials in Business Analysis (Microsoft & LinkedIn)
 
 ## 📊 Key Achievements
