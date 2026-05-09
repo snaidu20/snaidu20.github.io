@@ -12,6 +12,26 @@ I'm a Data Engineer working in healthcare, focused on making complex clinical an
 
 ## 🚀 Featured Projects
 
+### 🌊 MicroPlastiNet – Multi-modal Microplastic Detection & Source Attribution
+**Graph ML & Environmental AI • 2026**
+- End-to-end engineering prototype for microplastic detection, classification, and source attribution along coastal Georgia rivers
+- Combines IoT edge node (ESP32-CAM with turbidity, TDS, NIR sensors), CNN vision classifier, 1D-CNN spectral classifier, and Graph Neural Network on a 200-node hydrological flow graph
+- Uses Integrated Gradients on the GNN to trace concentration spikes back through river networks (Ogeechee, Savannah, Altamaha) to upstream sources
+- Includes Plotly Dash compliance dashboard, LLM-powered audit report generator, and cybersecurity layer (HMAC-SHA256, replay protection, key rotation) with 6/6 adversarial tests passing
+- Runs on physics-informed synthetic data; designed to plug in real NOAA NCEI, Rochman Lab spectra, ERA5, and HydroSHEDS data when access is granted
+- **Tech Stack**: Python, PyTorch, PyTorch Geometric, GNN, CNN, Plotly Dash, IoT, Cryptography
+- [💻 GitHub](https://github.com/snaidu20/MicroPlastiNet) | [🚀 Live Dashboard](https://naidusai-microplastinet.hf.space)
+
+### 🛡️ PolicyGraphAudit-RT – Runtime-Aware Privacy Compliance Auditor
+**Graph ML & Privacy Engineering • 2026**
+- Heterogeneous graph neural network that fuses privacy policy prose, Play Store data-safety labels, and embedded third-party SDKs into a tri-partite knowledge graph per Android app
+- 8 node types and 11 edge relations linking policy claims to label fields to inferred SDK behavior
+- Trains an R-GCN under 30% edge masking to classify policy-vs-practice discrepancies into four classes: CONSISTENT, POLICY_LABEL_MISMATCH, OVER_DISCLOSURE, UNDECLARED_COLLECTION
+- Achieves **Macro F1 = 0.956** on held-out test set (39 apps, 521 labeled pairs), outperforming text-only and policy-only baselines
+- Generates 252 per-app PDF audit reports with ranked discrepancies, policy evidence quotes, and SDK chains; ships with Plotly Dash dashboard, SDK heatmap, and model card
+- **Tech Stack**: Python, PyTorch, PyTorch Geometric, R-GCN, Heterogeneous GNN, NLP, Plotly Dash
+- [💻 GitHub](https://github.com/snaidu20/PolicyGraphAudit-RT) | [🚀 Live Dashboard](https://policygraphaudit.pplx.app)
+
 ### 🩻 MedGemma Medical Image Analyzer
 **AI & Medical Imaging • 2026**
 - Developed an AI-powered chest X-ray analyzer using Google's MedGemma foundation model
