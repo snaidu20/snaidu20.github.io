@@ -6,9 +6,9 @@ Personal portfolio website showcasing my work as a Data Engineer specializing in
 
 ## 👨‍💻 About Me
 
-I'm a Data Engineer working in healthcare, focused on making complex clinical and device data reliable, accessible, and useful for better decisions. Currently working at Upsilonsoft LLC (Client: Bristol Myers Squibb) on IoT-enabled patient vitals streaming and early-risk detection systems.
+I'm a Data and Machine Learning Engineer working in healthcare, focused on turning complex clinical, device, and graph-structured data into reliable ML systems and decision-ready insights.
 
-**Tech Stack**: Python | SQL | AWS | API
+**Tech Stack**: Python | PyTorch | PyTorch Geometric | SQL | AWS | APIs
 
 ## 🚀 Featured Projects
 
@@ -114,12 +114,13 @@ I'm a Data Engineer working in healthcare, focused on making complex clinical an
 
 ## 💼 Professional Experience
 
-### Data Engineer | Upsilonsoft LLC (Bristol Myers Squibb)
+### Data & ML Engineer | Upsilonsoft LLC (Bristol Myers Squibb)
 **May 2025 – Present**
-- Analyze large-scale patient & IoT-healthcare data for clinical workflow improvements
-- Build data pipelines ingesting sensor-driven medical device streams
-- Collaborate on connected health system initiatives with device telemetry
-- Develop automated insights for smarter diagnostics and patient-care decisions
+- Build end-to-end ML and data engineering pipelines for IoT-enabled patient vitals streaming and early-risk detection
+- Engineer feature stores and streaming pipelines from medical device telemetry on AWS (S3, Lambda, Glue) using Python, SQL, and PySpark
+- Train and deploy ML models for risk scoring, anomaly detection, and clinical workflow optimization on large-scale patient and device datasets
+- Develop automated insights and model-driven dashboards to support smarter diagnostics and patient-care decisions
+- Collaborate with clinical and platform teams on connected-health initiatives across device, patient, and trial data
 
 ### Data Engineer Intern | Progress Solutions
 **Jun 2024 – May 2025**
