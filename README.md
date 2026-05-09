@@ -13,7 +13,7 @@ I'm a Data and Machine Learning Engineer working in healthcare, focused on turni
 ## 🚀 Featured Projects
 
 ### 🌊 MicroPlastiNet – Multi-modal Microplastic Detection & Source Attribution
-**Graph ML & Environmental AI • 2026**
+**Graph ML & Environmental AI**
 - End-to-end engineering prototype for microplastic detection, classification, and source attribution along coastal Georgia rivers
 - Combines IoT edge node (ESP32-CAM with turbidity, TDS, NIR sensors), CNN vision classifier, 1D-CNN spectral classifier, and Graph Neural Network on a 200-node hydrological flow graph
 - Uses Integrated Gradients on the GNN to trace concentration spikes back through river networks (Ogeechee, Savannah, Altamaha) to upstream sources
@@ -23,7 +23,7 @@ I'm a Data and Machine Learning Engineer working in healthcare, focused on turni
 - [💻 GitHub](https://github.com/snaidu20/MicroPlastiNet) | [🚀 Live Dashboard](https://naidusai-microplastinet.hf.space)
 
 ### 🛡️ PolicyGraphAudit-RT – Runtime-Aware Privacy Compliance Auditor
-**Graph ML & Privacy Engineering • 2026**
+**Graph ML & Privacy Engineering**
 - Heterogeneous graph neural network that fuses privacy policy prose, Play Store data-safety labels, and embedded third-party SDKs into a tri-partite knowledge graph per Android app
 - 8 node types and 11 edge relations linking policy claims to label fields to inferred SDK behavior
 - Trains an R-GCN under 30% edge masking to classify policy-vs-practice discrepancies into four classes: CONSISTENT, POLICY_LABEL_MISMATCH, OVER_DISCLOSURE, UNDECLARED_COLLECTION
@@ -33,7 +33,7 @@ I'm a Data and Machine Learning Engineer working in healthcare, focused on turni
 - [💻 GitHub](https://github.com/snaidu20/PolicyGraphAudit-RT) | [🚀 Live Dashboard](https://policygraphaudit.pplx.app)
 
 ### 🩻 MedGemma Medical Image Analyzer
-**AI & Medical Imaging • 2026**
+**AI & Medical Imaging**
 - Developed an AI-powered chest X-ray analyzer using Google's MedGemma foundation model
 - Auto-detects imaging modality and generates detailed radiology reports
 - Reports are tailored for both clinicians and patients
@@ -60,7 +60,7 @@ I'm a Data and Machine Learning Engineer working in healthcare, focused on turni
 - [📄 Read Publication](https://www.ijrte.org/portfolio-item/A1979059120/)
 
 ### 📦 Global Supply Chain Demand Pressure Monitoring System
-**Supply Chain Analytics • 2026**
+**Supply Chain Analytics**
 - Developed system tracking real-time global availability of critical part numbers
 - Aggregates data from open market sources (TrustedParts, FindChips)
 - Combines with internal demand signals to compute Demand Pressure Index
