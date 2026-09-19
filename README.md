@@ -1,12 +1,12 @@
 # Saikumar Reddy Naidu - Portfolio
 
-Personal portfolio website showcasing my work as a Data Engineer specializing in Python, SQL, AWS, and API Development.
+Personal portfolio website showcasing my work as an Applied Computing Ph.D. student and Research Assistant at Georgia Southern University, with a background in data engineering and machine learning.
 
 🔗 **Live Site**: [snaidu20.github.io](https://snaidu20.github.io)
 
 ## 👨‍💻 About Me
 
-I'm a Data and Machine Learning Engineer working in healthcare, focused on turning complex clinical, device, and graph-structured data into reliable ML systems and decision-ready insights.
+I'm a Ph.D. student in Applied Computing and a Research Assistant at Georgia Southern University, working on social media mental health data analysis. My current work involves reviewing and annotating mental-health narratives, analyzing social relationships and support roles, and maintaining consistent, evidence-based research data. Previously, I worked as a Data & ML Engineer at Upsilonsoft LLC on healthcare analytics and real-time patient data pipelines. My research interests include Machine Learning, Deep Learning, and Graph Neural Networks.
 
 **Tech Stack**: Python | PyTorch | PyTorch Geometric | SQL | AWS | APIs
 
@@ -79,7 +79,7 @@ I'm a Data and Machine Learning Engineer working in healthcare, focused on turni
 
 ### 🏥 IoT Patient Vitals Streaming Pipeline
 **Healthcare IoT • Bristol Myers Squibb**
-- Building real-time data pipelines for medical device streams
+- Built real-time data pipelines for medical device streams
 - Early-risk detection and patient monitoring
 - **Tech Stack**: AWS, Medical IoT, Real-time, Healthcare
 
@@ -114,13 +114,22 @@ I'm a Data and Machine Learning Engineer working in healthcare, focused on turni
 
 ## 💼 Professional Experience
 
+### Research Assistant | Georgia Southern University
+**Aug 2026 – Present**
+
+Social Media Mental Health Data Analysis
+- Analyze social media narratives to study mental-health experiences, social relationships, and support roles
+- Apply a structured codebook to annotate social-person references and roles, preserving supporting evidence from each post
+- Review annotation consistency, document uncertain cases, and refine labels through systematic quality checks
+- Organize annotated datasets and research documentation to support reproducible analysis
+
 ### Data & ML Engineer | Upsilonsoft LLC (Bristol Myers Squibb)
-**May 2025 – Present**
-- Build end-to-end ML and data engineering pipelines for IoT-enabled patient vitals streaming and early-risk detection
-- Engineer feature stores and streaming pipelines from medical device telemetry on AWS (S3, Lambda, Glue) using Python, SQL, and PySpark
-- Train and deploy ML models for risk scoring, anomaly detection, and clinical workflow optimization on large-scale patient and device datasets
-- Develop automated insights and model-driven dashboards to support smarter diagnostics and patient-care decisions
-- Collaborate with clinical and platform teams on connected-health initiatives across device, patient, and trial data
+**May 2025 – Jul 2026**
+- Built end-to-end ML and data engineering pipelines for IoT-enabled patient vitals streaming and early-risk detection
+- Engineered feature stores and streaming pipelines from medical device telemetry on AWS (S3, Lambda, Glue) using Python, SQL, and PySpark
+- Trained and deployed ML models for risk scoring, anomaly detection, and clinical workflow optimization on large-scale patient and device datasets
+- Developed automated insights and model-driven dashboards to support smarter diagnostics and patient-care decisions
+- Collaborated with clinical and platform teams on connected-health initiatives across device, patient, and trial data
 
 ### Data Engineer Intern | Progress Solutions
 **Jun 2024 – May 2025**
@@ -137,6 +146,10 @@ I'm a Data and Machine Learning Engineer working in healthcare, focused on turni
 - Integrated data signals from multiple internal systems
 
 ## 🎓 Education
+
+### Ph.D. in Applied Computing
+**Georgia Southern University** | Aug 2026 – Present
+- Research Interests: Machine Learning, Deep Learning, and Graph Neural Networks
 
 ### Master of Science in Computer Science
 **Florida Atlantic University** | 2024
@@ -167,10 +180,10 @@ I'm a Data and Machine Learning Engineer working in healthcare, focused on turni
 
 ## 📫 Contact
 
-- 📧 Email: [snaidu2022@fau.edu](mailto:snaidu2022@fau.edu)
+- 📧 Email: [sn10196@georgiasouthern.edu](mailto:sn10196@georgiasouthern.edu)
 - 📱 Phone: [+1 912-306-7209](tel:+19123067209)
 - 💼 LinkedIn: [linkedin.com/in/reddysaiu](https://www.linkedin.com/in/reddysaiu)
-- 📍 Location: Winder, Georgia, US
+- 📍 Location: Statesboro, Georgia, US
 
 ## 🌐 Website Technology
 
